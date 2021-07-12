@@ -24,4 +24,4 @@ function chooseCountry(){
 
     console.log(chosenCountry)
     console.log(countries.length)
-}
+}   

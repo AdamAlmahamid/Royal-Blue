@@ -5,7 +5,31 @@
     <title>Countries Guessing Game</title>
     <link href="style.css" rel="stylesheet" type="text/css">
     <script src="script.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   </head>
+
   <body onload="chooseCountry()">
+    <h1 class="question">
+      Country Guessing Game!
+    </h1>
+
+
+    <div class="row">
+      <div class="col-3">
+        <button class="button" id="option1" onclick="checkAnswer()">Option 1</button>
+      </div>
+
+      <div class="col-3">
+        <button class="button" id="option2" onclick="checkAnswer()">Option 2</button>
+      </div>
+
+      <div class="col-3">
+        <button class="button" id="option3" onclick="checkAnswer()">Option 3</button>
+      </div>
+
+      <div class="col-3">
+        <button class="button" id="option4" onclick="checkAnswer()">Option 4</button>
+      </div>
+    </div>
   </body>
 </html>

@@ -1,0 +1,33 @@
+.question{
+    text-align: center;
+    border: 3px solid green;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    margin: 30px;
+    color: white;
+    padding: 60px;
+    padding-left:100px;
+    padding-right:100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+#option1 {
+    content: "firstOption";
+}
+
+#option2 {
+    content: "secondOption";
+}
+
+#option3 {
+    content: "thirdOption";
+}
+
+#option4 {
+    content: "fourthOption";
+}
