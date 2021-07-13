@@ -6,7 +6,7 @@ function chooseCountry() {
 }
 
 function choices(countries, chosenCountry) {
-    
+
 }
 
 var countries = [
@@ -28,5 +28,5 @@ var countries = [
     "Iceland",
     "Afganistan",
     "Belgium",
-    "Greenland",
+    "Greenland"
 ]
