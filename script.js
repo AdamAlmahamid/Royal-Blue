@@ -34,5 +34,10 @@ var countries = [
     "India",
     "Italy",
     "Japan", 
-    "Luxembourg", 
+    "Luxembourg",
+    "Mexico",
+    "Russia",
+    "Spain",  
+    "United Kingdom", 
+    "United States", 
 ]
