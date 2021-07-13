@@ -24,7 +24,7 @@ var countries = [
     "Australia", 
     "Brasil", 
     "Belgium",
-    "Canada", 
+    "Canada",
     "China",
     "Egypt", 
     "France",
@@ -35,9 +35,4 @@ var countries = [
     "Italy",
     "Japan", 
     "Luxembourg", 
-    "Mexico",
-    "Russia",
-    "Spain",  
-    "United Kingdom", 
-    "United States", 
-];
+]
