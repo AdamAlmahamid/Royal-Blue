@@ -8,29 +8,24 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   </head>
 
-  <body onload="chooseCountry()">
+  <body>
     <h1 class="question">
       Country Guessing Game!
     </h1>
 
-    
+    <button onclick="chooseCountry()">Start!</button>
+    <button onclick="choices()">Start!</button>
+    <button onclick="putChoices()">Start!</button>
 
-    <div class="row">
-      <div class="col-3">
-        <button class="button" id="option1" onclick="checkAnswer()">Option 1</button>
-      </div>
-
-      <div class="col-3">
-        <button class="button" id="option2" onclick="checkAnswer()">Option 2</button>
-      </div>
-
-      <div class="col-3">
-        <button class="button" id="option3" onclick="checkAnswer()">Option 3</button>
-      </div>
-
-      <div class="col-3">
-        <button class="button" id="option4" onclick="checkAnswer()">Option 4</button>
-      </div>
-    </div>
+    <h1>What is this country?</h1>
+    <img id="picture" src="">
+    <select name="choices" id="choices">
+      <option id="a">Volvo</option>
+      <option id="b">Saab</option>
+      <option id="c">Mercedes</option>
+      <option id="d">Audi</option>
+      <option id="e">Ford</option>
+    </select>
+  
   </body>
 </html>
