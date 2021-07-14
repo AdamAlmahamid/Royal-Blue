@@ -5,16 +5,16 @@ function chooseCountry() {
 }
 
 function choices() {
+    totalChoices = [];
     correctCountry = countries[Math.floor(Math.random()*countries.length)];
-    console.log(correctCountry)
+    document.getElementById("picture").src = "MAPS/" + correctCountry + ".png";
     totalChoices.push(correctCountry);
     for(let i = 0; i < 4; i++) {
         var choiceIsNotValid = true;
         while(choiceIsNotValid) {
             var alternate = countries[Math.floor(Math.random() * countries.length)];
-            //check that this country does not equal the current country and it is not already in the alternates array
+            //check that this country is not in the total choices array
             if(!totalChoices.some(country => country == alternate)) {
-                choicesIsNotValid = false;
                 totalChoices.push(alternate);
                 choiceIsNotValid = false;
             }
