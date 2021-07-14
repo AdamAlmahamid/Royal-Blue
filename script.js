@@ -5,6 +5,9 @@ function chooseCountry() {
 }
 
 function choices() {
+    correctCountry = countries[Math.floor(Math.random()*countries.length)];
+    console.log(correctCountry)
+    totalChoices.push(correctCountry);
     for(let i = 0; i < 4; i++) {
         var choiceIsNotValid = true;
         while(choiceIsNotValid) {
@@ -17,7 +20,19 @@ function choices() {
             }
         }
     }
-    console.log(alternates)	
+     //shuffles the totalChoices will all of the options
+     for (let i = totalChoices.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        [totalChoices[i], totalChoices[j]] = [totalChoices[j], totalChoices[i]];
+    }
+
+    //puts options in html
+    console.log(totalChoices)	
+    document.getElementById("a").innerText= totalChoices[0];
+    document.getElementById("b").innerText= totalChoices[1];
+    document.getElementById("c").innerText= totalChoices[2];
+    document.getElementById("d").innerText= totalChoices[3];
+    document.getElementById("e").innerText= totalChoices[4];
 }
 var correctCountry = null
 var totalChoices = [];
@@ -45,17 +60,5 @@ var countries = [
 ]
 
 function putChoices(){
-    //shuffles the totalChoices will all of the options
-    for (let i = totalChoices.length - 1; i > 0; i--) {
-        var j = Math.floor(Math.random() * (i + 1));
-        [totalChoices[i], totalChoices[j]] = [totalChoices[j], totalChoices[i]];
-    }
 
-    //puts options in html
-    console.log(totalChoices)	
-    document.getElementById("a").innerText= totalChoices[0]
-    document.getElementById("b").innerText= totalChoices[1]
-    document.getElementById("c").innerText= totalChoices[2]
-    document.getElementById("d").innerText= totalChoices[3]
-    document.getElementById("e").innerText= totalChoices[4]
 }
