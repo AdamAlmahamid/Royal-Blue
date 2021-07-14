@@ -58,7 +58,3 @@ var countries = [
     "United Kingdom", 
     "United States", 
 ]
-
-function putChoices(){
-
-}
