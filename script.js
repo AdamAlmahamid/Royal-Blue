@@ -37,7 +37,7 @@ function choices() {
 var correctCountry = null
 var totalChoices = [];
 var countries = [
-    "Afganistan",
+    "Afghanistan",
     "Australia", 
     "Brasil", 
     "Belgium",
