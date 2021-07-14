@@ -14,3 +14,18 @@
     display: inline-block;
     font-size: 16px;
 } 
+.selector {
+    background-color:rgb(201, 199, 199);
+    border-style:solid;
+    border-width: 4px;
+    border-color:black;
+    padding:10px
+}
+
+#choices-2 {
+    padding-right:20px;
+    padding-left:20px;
+    padding-top:10px;
+    padding-bottom:10px;
+    font-size:xx-large;
+}
