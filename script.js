@@ -6,7 +6,11 @@ function chooseCountry() {
 
 function choices() {
     totalChoices = [];
+<<<<<<< HEAD
+    correctCountry = countries[Math.floor(Math.random()*countries.length)]
+=======
     correctCountry = countries[Math.floor(Math.random()*countries.length)];
+>>>>>>> 072ef178b93e167aa6843998af623605b9e83211
     document.getElementById("picture").src = "MAPS/" + correctCountry + ".png";
     totalChoices.push(correctCountry);
     for(let i = 0; i < 4; i++) {
@@ -25,7 +29,10 @@ function choices() {
         var j = Math.floor(Math.random() * (i + 1));
         [totalChoices[i], totalChoices[j]] = [totalChoices[j], totalChoices[i]];
     }
+<<<<<<< HEAD
+=======
 
+>>>>>>> 072ef178b93e167aa6843998af623605b9e83211
     //puts options in html
     console.log(totalChoices)	
     document.getElementById("a").innerText= totalChoices[0];
@@ -37,7 +44,11 @@ function choices() {
 var correctCountry = null
 var totalChoices = [];
 var countries = [
+<<<<<<< HEAD
+    "Afganistan",
+=======
     "Afghanistan",
+>>>>>>> 072ef178b93e167aa6843998af623605b9e83211
     "Australia", 
     "Brasil", 
     "Belgium",
@@ -57,4 +68,9 @@ var countries = [
     "Spain",  
     "United Kingdom", 
     "United States", 
+<<<<<<< HEAD
 ]
+
+=======
+]
+>>>>>>> 072ef178b93e167aa6843998af623605b9e83211
