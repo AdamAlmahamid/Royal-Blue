@@ -70,6 +70,7 @@ submitButton.addEventListener("click",function() {
         numberWrong++;
         document.getElementById("wrong").textContent = numberWrong.toString();
     }
+    choices()
 })
 
 
