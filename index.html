@@ -4,27 +4,35 @@
     <meta charset="UTF-8" />
     <title>Countries Guessing Game</title>
     <link href="style.css" rel="stylesheet" type="text/css">
-    <script src="script.js" type="text/javascript"></script>
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   </head>
   <body style="margin-left:5%;margin-right:5%">
     <h1 class="jumbotron display-3 text-important">Country guessing game</h1> 
     <h2 class="jumbotron display-4 text-secondary">by: ___, ___, ___, ___, ___, ___</h2>
-    <button onclick="choices()" class="display-4 text-bright btn btn-primary">Play!</button>
+    <button onclick="choices()" class="display-4 text-bright btn btn-primary" id="choices-2">Play!</button>
     <hr>
     <hr class="mt-2 mb-3">
     <h3 class="display-4">What is this country?</h1>
     <hr>
     <hr>
-    <img id="picture" src="">
-    <select name="choices" id="choices">
-      <option id="a"></option>
-      <option id="b"></option>
-      <option id="c"></option>
-      <option id="d"></option>
-      <option id="e"></option>
-    </select>
-  
+    
+        <img id="picture" src="">
+        <br>
+            <select name="choices" id="choices" class="display-4 selector">
+                <option value="" disabled selected hidden>Choose a country</option>
+                <option id="a" class="display-6 text-muted"></option>
+                <option id="b" class="display-6 text-muted"></option>
+                <option id="c" class="display-6 text-muted"></option>
+                <option id="d" class="display-6 text-muted"></option>
+                <option id="e" class="display-6 text-muted"></option>
+            </select>
+        <br><br>
+        <button type="button" value="Submit" id="submit">Submit</button>
+    <br><br><br><br>
+<p>number correct: <span id="right"></span></p>
+<p>number wrong: <span id="wrong"></span></p>
+    <script src="script.js" type="text/javascript"></script>
   </body>
 
 </html>

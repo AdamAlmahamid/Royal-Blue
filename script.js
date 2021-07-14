@@ -26,15 +26,18 @@ function choices() {
         [totalChoices[i], totalChoices[j]] = [totalChoices[j], totalChoices[i]];
     }
     //puts options in html
-    console.log(totalChoices)	
+    // console.log(totalChoices)
+    
     document.getElementById("a").innerText= totalChoices[0];
     document.getElementById("b").innerText= totalChoices[1];
     document.getElementById("c").innerText= totalChoices[2];
     document.getElementById("d").innerText= totalChoices[3];
     document.getElementById("e").innerText= totalChoices[4];
 }
-var correctCountry = null
+var correctCountry = null;
 var totalChoices = [];
+var numberCorrect = 0;
+var numberWrong = 0;
 var countries = [
     "Afghanistan",
     "Australia", 
@@ -56,4 +59,17 @@ var countries = [
     "Spain",  
     "United Kingdom", 
     "United States", 
-]
+];
+var submitButton = document.getElementById("submit")
+submitButton.addEventListener("click",function() {
+    if(document.getElementsByTagName("select")[0].value===correctCountry) {
+        numberCorrect++;
+        document.getElementById("right").textContent = numberCorrect.toString();
+    }
+    else {
+        numberWrong++;
+        document.getElementById("wrong").textContent = numberWrong.toString();
+    }
+})
+
+
