@@ -1,6 +1,7 @@
 function chooseCountry() {
     correctCountry = countries[Math.floor(Math.random()*countries.length)];
     console.log(correctCountry)
+    totalChoices.push(correctCountry);
 }
 
 function choices() {
@@ -9,16 +10,17 @@ function choices() {
         while(choiceIsNotValid) {
             var alternate = countries[Math.floor(Math.random() * countries.length)];
             //check that this country does not equal the current country and it is not already in the alternates array
-            if(alternate !== correctCountry && !alternates.some(country => country == alternate)) {
-                alternates.push(alternate);
+            if(!totalChoices.some(country => country == alternate)) {
                 choicesIsNotValid = false;
+                totalChoices.push(alternate);
+                choiceIsNotValid = false;
             }
         }
     }
     console.log(alternates)	
 }
 var correctCountry = null
-var alternates = [];
+var totalChoices = [];
 var countries = [
     "Afganistan",
     "Australia", 
@@ -41,3 +43,19 @@ var countries = [
     "United Kingdom", 
     "United States", 
 ]
+
+function putChoices(){
+    //shuffles the totalChoices will all of the options
+    for (let i = totalChoices.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        [totalChoices[i], totalChoices[j]] = [totalChoices[j], totalChoices[i]];
+    }
+
+    //puts options in html
+    console.log(totalChoices)	
+    document.getElementById("a").innerText= totalChoices[0]
+    document.getElementById("b").innerText= totalChoices[1]
+    document.getElementById("c").innerText= totalChoices[2]
+    document.getElementById("d").innerText= totalChoices[3]
+    document.getElementById("e").innerText= totalChoices[4]
+}
