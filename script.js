@@ -41,7 +41,7 @@ var numberWrong = 0;
 var countries = [
     "Afghanistan",
     "Australia", 
-    "Brasil", 
+    "Brazil", 
     "Belgium",
     "Canada",
     "China",
