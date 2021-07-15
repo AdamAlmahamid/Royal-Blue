@@ -65,14 +65,19 @@ submitButton.addEventListener("click",function() {
     if(document.getElementsByTagName("select")[0].value===correctCountry) {
         numberCorrect++;
         document.getElementById("right").textContent = numberCorrect.toString();
-        document.getElementById("correctAnswer").textContent = "You got the previous question right!"
+        document.getElementById("correctAnswer").textContent = "You got the previous question right!";
+        choices();
+    }
+    else if(document.getElementsByTagName("select")[0].value==="Choose a Country"){
+        document.getElementById("correctAnswer").textContent = "Invalid answer choice, try selecting a country"
     }
     else {
         numberWrong++;
         document.getElementById("wrong").textContent = numberWrong.toString();
         document.getElementById("correctAnswer").textContent = "The right answer to the previous question was " + correctCountry;
+        choices();
     }
-    choices()
+    
 })
 
 
