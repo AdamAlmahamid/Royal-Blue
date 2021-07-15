@@ -16,12 +16,13 @@
 } 
 /* choose a country */
 .selector {
-    background-color:rgb(201, 199, 199);
+    /* background-color:rgb(201, 199, 199); */
+    background-color:rgba(65, 105, 225, 0.431);
     border-style:solid;
     border-width: 4px;
     border-color:black;
     padding:10px;
-    border-radius:10px
+    border-radius:10px;
 }
 
 #choices-2 {
@@ -35,10 +36,11 @@
 .scoreTracker {
     border-style:solid;
     border-width:4px;
-    border-color:rgb(194, 188, 188);
+    border-color:black;
     padding:20px;
     display:inline-block;
     border-radius:10px;
+    background-color:rgba(65, 105, 225, 0.479);
 }
 
 .scoreText{
