@@ -10,17 +10,20 @@
   <body style="margin-left:5%;margin-right:5%">
     <h1 class="jumbotron display-3 text-important">Country guessing game</h1> 
     <h2 class="jumbotron display-4 text-secondary">by: ___, ___, ___, ___, ___, ___</h2>
+    <!-- Play Button -->
     <button onclick="choices()" class="display-4 text-bright btn btn-primary" id="choices-2">Play!</button>
     <hr>
     <hr class="mt-2 mb-3">
-    <h3 class="display-4">What is this country?</h1>
+    <div>
+      <h3 class="display-4">What is this Country?</h1>
+    </div>
     <hr>
     <hr>
-    
+    <!-- Options to choose from -->
         <img id="picture" src="">
         <br>
             <select name="choices" id="choices" class="display-4 selector">
-                <option value="" disabled selected hidden>Choose a country</option>
+                <option value="" disabled selected hidden>Choose a Country</option>
                 <option id="a" class="display-6 text-muted"></option>
                 <option id="b" class="display-6 text-muted"></option>
                 <option id="c" class="display-6 text-muted"></option>
@@ -28,10 +31,13 @@
                 <option id="e" class="display-6 text-muted"></option>
             </select>
         <br><br>
-        <button type="button" value="Submit" id="submit">Submit</button>
-    <br><br><br><br>
-<p>number correct: <span id="right"></span></p>
-<p>number wrong: <span id="wrong"></span></p>
+        <button type="button" value="Submit" id="submit" class="btn btn-secondary">Submit</button>
+    <br><br>
+    <!-- Score Tracker -->
+<div class="scoreTracker">
+  <p class="scoreText display-4">Number Correct:    <span id="right"></span></p>
+  <p class="scoreText display-4">Number Wrong:    <span id="wrong"></span></p>
+</div>
     <script src="script.js" type="text/javascript"></script>
 <p id="correctAnswer"></p>
 </body>
